@@ -63,7 +63,7 @@ The project workflow is as follows:
    - ![cron](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/cron.png?raw=true)
    - The email content is parsed and formatted from the latest entries of the GitHub timeline.
    - ![email](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/email.png?raw=true)
-   - ![email unsub link](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/email2.png?raw=true)
+   - ![email unsub link](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/email2.png?raw=true)
 
 ---
 
