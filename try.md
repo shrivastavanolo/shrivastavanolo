@@ -24,7 +24,7 @@ The project workflow is as follows:
 1. **Subscription Form**:
    - The `index.php` file displays a form with input fields for First Name, Last Name, and Email Address.
    - Upon submission, the form data is sent to `validation.php`.
-     ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/index.jpg?raw=true)
+     ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/index.png?raw=true)
 
 2. **Validation**:
    - In `validation.php`, the email address is validated against `filter_var($email, FILTER_VALIDATE_EMAIL)`.
