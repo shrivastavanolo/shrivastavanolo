@@ -30,7 +30,7 @@ The project workflow is as follows:
    - In `validation.php`, the email address is validated against `filter_var($email, FILTER_VALIDATE_EMAIL)`.
    - If the email is valid, the flow proceeds to `helper/check.php`.
    - If invalid, an error message is displayed to the user.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/validation.png?raw=true)
+   - ![validation.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/validation.png?raw=true)
 
 3. **Email Authentication**:
    - In `check.php`, the email is checked against the database:
@@ -45,24 +45,25 @@ The project workflow is as follows:
    - An email containing the token is sent to the user.
    - The user inputs the token on the same page to verify their email address.
    - If the token matches, `is_auth` is set to `1` in the database, and the user is redirected to `subscribed.php`.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/verify_unsub_verify.png?raw=true)
+   - ![verify.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/verify_unsub_verify.png?raw=true)
 
 5. **Unsubscribe Process**:
    - Users can unsubscribe using the link in the email or a button on `subscribed.php`.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/subscribed.png?raw=true)
+   - ![subscribed.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/subscribed.png?raw=true)
    - The link directs them to `unsubscribe.php`, where they confirm their intention to unsubscribe.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/unsubscribe.png?raw=true)
+   - ![unsubscribe.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/unsub.png?raw=true)
    - Upon confirmation, a new token is generated and stored in the `unsub_auth` column.
    - The flow moves to `unsub_verify.php`, where the user inputs the token to confirm unsubscription.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/verify_unsub_verify.png?raw=true)
+   - ![unsub_verify.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/verify_unsub_verify.png?raw=true)
    - If the token matches, the user is removed from the subscription list, and `unsub_auth` is cleared. The user is redirected to `unsub.php` with a confirmation message.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/unsub.png?raw=true)
+   - ![unsub_auth.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/unsubscribe.png?raw=true)
 
 6. **Cron Job**:
    - A cron job runs every five minutes, sending emails to authenticated subscribers.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/cron.png?raw=true)
+   - ![cron](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/cron.png?raw=true)
    - The email content is parsed and formatted from the latest entries of the GitHub timeline.
-   - ![index.php](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/email.png?raw=true)
+   - ![email](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/images/email.png?raw=true)
+   - ![email unsub link](https://github.com/shrivastavanolo/shrivastavanolo/blob/main/email2.png?raw=true)
 
 ---
 
