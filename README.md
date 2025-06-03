@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @shrivastavanolo
-- 👀 I’m interested in coding, video editing and getting that bread
-- 🌱 I’m currently learning ml, blender and how to use git
+- 👀 I’m interested in coding and video editing
 - 💞️ I’m looking to collaborate on any project where i'd get to learn something new
 - 📫 How to reach me @shrinolo on kaggle, Leetcode and Linkedin 
 
