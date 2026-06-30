@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @shrivastavanolo
 - 👀 I’m interested in coding and video editing
-- 💞️ I’m looking to collaborate on any project where i'd get to learn something new
-- 📫 How to reach me @shrinolo on kaggle, Leetcode and Linkedin 
+- 💞️ Currently really into Open Source
 
 <!---
 shrivastavanolo/shrivastavanolo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
