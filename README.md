@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @shrivastavanolo
 - 👀 I’m interested in coding and video editing
-- 💞️ Currently really into Open Source
 
 <!---
 shrivastavanolo/shrivastavanolo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
